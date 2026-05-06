@@ -7,6 +7,14 @@
   flex-direction: column;
   transition: transform 0.3s;
 
+  &:hover {
+    transform: scale(1.2);
+
+    .card__title {
+      color: $color-title-hover;
+    }
+  }
+
   &__image {
     width: 160px;
     height: 134px;
@@ -86,12 +94,8 @@
     box-sizing: border-box;
 
     &:hover {
-      transform: scale(1.2);
       background-color: #fff;
       color: $color-primary;
-      .card__title {
-        color: $color-title-hover;
-      }
     }
   }
 }
